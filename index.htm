@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' '/comum/dtd/xhtml11.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' >
+<head>
+  <title>Cube</title>
+  <style>
+  body, td, a:link, a:visited, a:active, a:hover{
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    color: #000000;
+    background-color: #ffffff
+  }
+  a:link, a:visited {color: #224466; font-size: 15px; background: none}
+  a:active, a:hover {color: #aa6699; font-size: 15px; background: none}
+  table {background-color: #336699}
+  </style>
+</head>
+<body>
+<div style='text-align: center'>
+<table>
+  <tr>
+    <td class='titulo1'>
+      <b>Cube</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Cubo transl&uacute;cido com um cubo s&oacute;lido inscrito que rotaciona na tela.<br />Escrito em C com Glut e OpenGL.<br />
+      <img src='cube.jpg' />
+      <hr />
+      <b>Teclas:</b>
+      <blockquote>
+        <table>
+          <tr><td><b>Tecla</b></td><td><b>Descri&ccedil;&atilde;o</b></td></tr>
+          <tr><td>1</td><td>Liga/Desliga rota&ccedil;&atilde;o do cubo 1 (transl&uacute;cido)</td></tr>
+          <tr><td>2</td><td>Liga/Desliga rota&ccedil;&atilde;o do cubo 2 (s&oacute;lido)</td></tr>
+          <tr><td>q/Q/&lt;ESC&gt;</td><td>Sai do Programa</td></tr>
+        </table>
+      </blockquote><br />
+      <br />
+      <b>Arquivos:</b>
+      <blockquote>
+      <table>
+        <tr>
+          <td><b>Arquivo</b></td><td><b>Descri&ccedil;&atilde;o</b></td>
+        </tr>
+        <tr>
+          <td><a href='Makefile'>Makefile</a></td><td>Arquivo que facilita a compila&ccedil;&atilde;o (para Unix/Linux)</td>
+        </tr>
+        <tr>
+          <td><a href='cube.c'>cube.c</a></td><td>C&oacute;digo fonte do programa</td>
+        </tr>
+        <tr>
+          <td><a href='cube.exe'>cube.exe</a></td><td>Bin&aacute;rio do programa pra Windows*</td>
+        </tr>
+        <tr>
+          <td><a href='cube_timer'>cube (com timer)</a></td><td>Bin&aacute;rio do programa pra MacOS X</td>
+        </tr>
+        <tr>
+          <td><a href='cube_notimer'>cube_(sem timer)</a></td><td>Bin&aacute;rio do programa pra MacOS X</td>
+        </tr>
+        <tr>
+          <td><a href='/comum/lib/glut32.dll'>glut32.dll</a></td><td>Glut para Windows</td>
+        </tr>
+      </table>
+      </blockquote>
+      <br />
+      <blockquote>
+      * Voc&ecirc; precisa do glut32.dll para rodar o bin&aacute;rio.<br />
+      Basta copi&aacute;-lo para %SystemRoot%\system32 (WinXP/2K) ou %windir%\system (Win9x).<br />
+      O bin&aacute;rio foi criado com o <a href='http://www.mingw.org/'>MingW 3.2.3</a> em plataforma Windows XP (2600sp1).<br />
+      Para compil&aacute;-lo usando MingW, use:<br />
+      <code>gcc cube.c -o cube -Lc:\mingw\lib -lopengl32 -lglu32 -lglut32</code>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
